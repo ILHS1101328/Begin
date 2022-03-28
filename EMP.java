@@ -1,19 +1,17 @@
 import java.util.*;
-import java.util.Random.*;
-// The EMP class will contain static void main() and all the other static
-// methods that make up your "program" - like our earlier programs where
-// we weren't defining our own custom objects. Your code here will USE
-// objects created by your MathProblem class.
-
 class EMP {
-  
   public static void main(String[] args) {
     Scanner Console = new Scanner(System.in);
+    Random rand = new Random();
+    // Introduction method
     introduction();
-    int quizBegin;
-    }
-  
-  public static void introduction() { 
+    // Summary method
+    summary();
+  }
+  // introduction method defined
+  // explains the point of the code 
+  // prints once
+  public static void introduction() {
     System.out.println("Welcome to the EMP! (Elementary Math Program)");
     System.out.println("This program allows you to take a series of quizzes");
     System.out.println("with a mix of addition, subtraction, multiplication,");
@@ -23,14 +21,25 @@ class EMP {
     System.out.println();
   }
 
-  // MathProblem quizBegin = new MathProblem();
-  
-  static int quizBegin(int numberQuiz, Scanner Console) {
+  // required correct gets info from constructer
+  // then returns the required
+  public requiredCorrectMethod(int numberQuiz, Scanner Console) {
     System.out.print("Quiz #" + numberQuiz + ": Number of correct answers required? ");
     int requiredCorrect = Console.nextInt();
-    return requiredCorrect;
-
+    if (requiredCorrect > 0) {
+      return requiredCorrect;
+    }
   }
-  
+  // method that gets the question
+  public getQuestion(int numberQuiz, int number1, int number2, Scanner Console) {
+    while (numberQuiz ) {
+      
+    }
+  }
+  // after questions are answered print the results that include the % and the attempts compared to questions
+  public quizresults() {
     
   }
+
+
+}
