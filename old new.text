@@ -6,13 +6,36 @@ import java.util.*;
 public class MathProblem {
 // private Random rand
   private Random rand;
+// private int numberQuiz;
+  private int numberQuiz;
+// private int requiredCorrect;
+  private int requiredCorrect;
+// private int numberCorrect;
+  private int numberCorrect;
+// private int attempts;
+  private int numberAttempts;
+// private int questionsAsked;
+  private int questionsAsked;
 // private int correctAnswer;
   private int correctAnswer;
+// private double quizPercent;
+  private double quizPercent;
 // private boolean solved;
   private boolean solved;
+// private boolean retake;
+  private boolean retake;
 // constructer for each quiz
   public MathProblem(Random rand) {
-    this.rand = rand; }  
+    this.rand = rand;
+    
+  }
+// public method getRequired 
+// for the required # add, this = this
+// collects the required correct # of answers
+// while the # of answers is < 0, prints a error message 
+// keeps the value of required
+// prints a new line after getting a valid value
+  public void getRequired() {}
 // public String getQuestion
 // this method creates the question in string form and returns it
 // along with this it grabs the correct answer to the string

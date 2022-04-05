@@ -1,0 +1,95 @@
+// The MathProblem class will contain the fields, constructor, and
+// instance methods that define the state and behavior of a
+// MathProblem object.
+import java.util.*;
+class MathProblem {
+  Random rand = new Random(System.in);
+// Private varibales for EMP //
+  private int numberQuiz; // private int number quiz
+  private int requiredCorrect; // private int required correct
+  private int numberCorrect; // private int number correct
+  // private int totalCorrect; // private int total correct
+  private int numberAttempts; // private int attempts
+  // private int totalAttempts; // private int total attempts
+  private int questionsAsked; // private int questions asked
+  private int correctAnswer; // private int correctAnswer
+  private double finalPercent; // private double final percent
+  private double overallPercent; // private double overall percent
+  private boolean solved;
+  private boolean retake; // private boolean retake
+
+  private getRequired(int numberQuiz, int requiredCorrect) { // defines the starting value for start of each quiz
+    this.numberQuiz = this.numberQuiz + 1; // gets +1 added each quiz
+    this.requiredCorrect = this.requiredCorrect; // input value is the value
+    // requiredCorrect = Console.nextInt(); // input its value
+    while (requiredCorrect <= 0) { // While requiredCorrect input is < 0 
+      System.out.print("Must be > 0. Number of correct answers required? ");
+      requiredCorrect = Console.nextInt(); // Print Error message and ask again
+    } return this.requiredCorrect; // Once > 0 return
+    System.out.println(); } // New line
+
+  // no parameters, returns String with the MathProblem’s question (e.g. “5 * 9 = ? “)
+  public String getQuestion() {
+    int numberOne;
+    int numberTwo; 
+    int 
+    this.correctAnswer == this.correctAnswer;
+    
+    return String "5";
+    }
+  
+
+  // Checks its single integer parameter against the MathProblem’s correct answer, and appropriately updates the MathProblem’s state (bool field) to “solved” or “not solved”. Throws an IllegalStateException if called after the problem has already been solved.
+  public giveAnswer() {
+    if ( == ) {
+      return true;
+    } else {
+      return false;
+    }
+    
+  }
+  // no parameters, returns true if problem has been solved, false otherwise
+  public boolean answeredCorrectly() {
+    if (inputAnswer == correctAnswer) {
+      return solved == true;
+    } else {
+      return solved == false;
+    }
+  }
+  // no parameters, returns string with appropriate feedback based on whether the MathProblem has been solved or not. Feedback on answers must always start with the exact string “Correct!” or “Incorrect.”  Must have at least four different feedback messages for correct answers, and another four for incorrect answers. (These messages cannot match what’s shown in the sample output above.)
+  public getFeedback() {
+    int feedback = rand.nextInt(5);
+    if (answeredCorrectly == true) {
+      if (feedback == 1) {
+        System.out.println("Correct. You're not a math wiz, You're a wizard ! "); }
+      if (feedback == 2) {
+        System.out.println("Correct. I knew you could do it ! "); }
+      if (feedback == 3) {
+        System.out.println("Correct. Keep it up champ ! "); }
+      if (feedback == 4) {
+        System.out.println("Correct. Wowwie Zowwie, You're a Smartie ! "); }
+      System.out.println(); } 
+    if (answeredCorrectly == false) {
+      if (feedback == 1) {
+        System.out.println("Incorrect. Try again, You got this ! "); }
+      if (feedback == 2) {
+        System.out.println("Incorrect. Lets run that back buddy ! "); }
+      if (feedback == 3) {
+        System.out.println("Incorrect. Take it step by step ! "); }
+       if (feedback == 4) {
+        System.out.println("Incorrect. You can do it ! ");  }
+      System.out.println("Try again ... ");
+      System.out.println(); } }
+
+  public quizResults(int numberCorrect, int numberAttempts) {}
+
+
+  public boolean retakeQuiz() {
+    System.out.print("Do you want to take another quiz (y or n)? ");
+    if (getYOrN == "y") {
+      return retake == true;
+    }
+  }
+}
+  
+ 

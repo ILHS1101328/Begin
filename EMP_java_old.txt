@@ -1,0 +1,39 @@
+import java.util.*;
+class EMP {
+  public static void main(String[] args) {
+    Scanner Console = new Scanner(System.in);
+    Random rand = new Random();
+    MathProblem getQuestion = new MathProblem(rand);
+    introduction(); // Introduction Method
+    overallResults(); } // Prints the overall results to user
+  
+  static void introduction() { // Introduction paragraph defined
+    System.out.println("Welcome to the EMP! (Elementary Math Program)");
+    System.out.println("This program allows you to take a series of quizzes");
+    System.out.println("with a mix of addition, subtraction, multiplication,");
+    System.out.println("and division problems. It will keep track of your");
+    System.out.println("scores on each quiz, and give you a summary of your");
+    System.out.println("results at the end. Good skill!");
+    System.out.println(); } // Only prints one time
+
+  public newQuiz() {
+    while (retake != false) {
+      System.out.print("Quiz #" + numberQuiz + ": Number of correct answers required? ");
+      int requiredCorrect = Console.nextInt(); // input its value
+      while (numberCorrect != requiredCorrect) {
+        newQuiz.getQuestion();
+        int inputanswer = Console.nextInt();
+      }
+       
+
+
+
+         // String getYOrN = Console.nextInt();
+       }
+      }
+    }
+  // static void OverallResults() {
+    
+  // }
+}
+  
